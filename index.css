@@ -196,3 +196,23 @@
 
     }
 
+/* Remove tap highlight on mobile */
+button, a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Remove outline and shadow on focus */
+button:focus,
+a:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* Optional: Remove outline for browsers that support :focus-visible (safer for accessibility) */
+:focus:not(:focus-visible) {
+  outline: none;
+  box-shadow: none;
+}
+
+
+
