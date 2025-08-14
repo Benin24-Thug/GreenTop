@@ -56,6 +56,7 @@ header p {
     background-image: url('https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/308-name6031-ake.jpg?bg=transparent&con=3&cs=srgb&dpr=1&fm=jpg&ixlib=php-3.1.0&q=80&usm=15&vib=3&w=1300&s=65d36675f87278734ea2876c32c9b60e');
     background-size: cover;
     background-position: center;
+    border-radius:15px;
     height: 250px;
     display: flex;
     align-items: center;
@@ -187,6 +188,7 @@ footer a:hover {
     font-size: 14px;
     margin: 10px;
 }
+
 
 
 
