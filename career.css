@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family:'Poppins', sans-serif;
+    font-family:Playfair Display', serif;
     background-color: #d0f8ce;
     text-align: center;
 }
@@ -187,4 +187,5 @@ footer a:hover {
     font-size: 14px;
     margin: 10px;
 }
+
 
