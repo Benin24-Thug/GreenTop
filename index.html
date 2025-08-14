@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GreenTop IT Company</title>
+  <link rel="stylesheet" href="index.css">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+
+  <header>
+    <h1>GreenTop</h1>
+    <p>Information Technology</p>
+  </header>
+
+  <div class="menu-toggle" onclick="toggleSidebar()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <div class="sidebar" id="sidebar">
+    <div class="sidebar-logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Logo_Green.svg/1024px-Logo_Green.svg.png" alt="Logo">
+      <h2>GreenTop</h2>
+    </div>
+    <nav>
+      <a href="projects.html">Projects</a>
+      <a href="career.html">Careers</a>
+      <a href="internship.html">Internship</a>
+      <a href="https://greentopindia.com/">Greentop Groups</a>
+    </nav>
+    <div class="about">
+      &copy; 2025 GreenTop IT. All rights reserved.
+    </div>
+  </div>
+
+  <div class="main-content" id="mainContent">
+    <div class="banner"></div>
+
+    <div class="intro">
+      <p>
+        GreenTop IT Company delivers innovative digital solutions across industries,
+        specializing in software, web design, cybersecurity, and IT consulting. With a
+        skilled team and agile approach, we create customized services that boost efficiency
+        and security.
+      </p>
+    </div>
+
+    <div class="services">
+      <h2>Our Services</h2>
+      <div class="service-cards">
+        <div class="card">
+          <img src="https://thumbs.dreamstime.com/z/designer-creating-website-computer-female-s-hand-using-graphic-tablet-148951874.jpg" alt="Web Development">
+          <p>Web Development</p>
+        </div>
+        <div class="card">
+          <img src="https://static.vecteezy.com/system/resources/previews/001/103/214/large_2x/portrait-of-two-businessmen-shaking-hands-to-celebrate-partnership-free-photo.jpg" alt="App Development">
+          <p>Application Development</p>
+        </div>
+        <div class="card">
+          <img src="https://tse3.mm.bing.net/th/id/OIP.dA4p9kH5oo1DcB197tgK4gHaE8" alt="Business Solutions">
+          <p>Business Solutions</p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div>
+        <h4>Contact Us</h4>
+        <a href="tel:+919876543210">+91 9876543210</a><br>
+        <a href="mailto:greentop@gmail.com">greentop@gmail.com</a>
+      </div>
+      <div>
+        <h4>About</h4>
+        <a href="team.html">Our Team</a><br>
+        <a href="mission.html">Mission</a>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <a href="feedback.html">Feedback</a><br>
+        <a href="help.html">Help Center</a>
+      </div>
+      <div>
+        <h4>Address</h4>
+        <a href="https://maps.app.goo.gl/pNc3zN1x9bBZ6rHy9">GreenTop,<br>Nithiravillai</a>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById('sidebar');
+      const content = document.getElementById('mainContent');
+      sidebar.classList.toggle('show');
+      content.classList.toggle('shrinked');
+    }
+
+    window.addEventListener('click', function(e) {
+      const sidebar = document.getElementById('sidebar');
+      const toggle = document.querySelector('.menu-toggle');
+      if (sidebar.classList.contains('show') && !sidebar.contains(e.target) && !toggle.contains(e.target)) {
+        sidebar.classList.remove('show');
+        document.getElementById('mainContent').classList.remove('shrinked');
+      }
+    });
+  </script>
+</body>
+</html>
