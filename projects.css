@@ -147,6 +147,7 @@ footer {
   background-color: #89fc93;
   padding: 15px;
   display: flex;
+  border-radius:5px;
   justify-content: space-around;
   font-size: 0.9em;
   flex-wrap: wrap;
@@ -204,4 +205,5 @@ footer div a:hover {
     font-size: 1.8em;
   }
 }
+
 
