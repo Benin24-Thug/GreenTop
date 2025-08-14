@@ -1,7 +1,7 @@
 body.projects {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #d3fdd6;
+  background-color: #dcf3f7;
 }
 
 header {
@@ -144,7 +144,7 @@ header a.btn-hover {
 }
 
 footer {
-  background-color: #89fc93;
+  background-color:#00ACAC;
   padding: 15px;
   display: flex;
   border-radius:5px;
@@ -205,5 +205,6 @@ footer div a:hover {
     font-size: 1.8em;
   }
 }
+
 
 
